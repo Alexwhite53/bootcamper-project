@@ -10,9 +10,9 @@ import com.organization.mvcproject.mist.model.Game;
 @Service("javaGameService")
 public class GameImpl implements GameService {
 
-	private static Long gameId = new Long(0);
-	private static Long companyId = new Long(0);
-	private static List<Game> games = new ArrayList<Game>();
+	private static Long gameId = Long.valueOf(0);
+	private static Long companyId = Long.valueOf(0);
+	private static List<Game> games = new ArrayList<>();
 
 	static {
 		games = populateGames();
