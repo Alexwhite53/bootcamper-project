@@ -1,14 +1,14 @@
-package com.organization.mvcproject.mgl.service;
+package com.organization.mvcproject.mist.service;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.organization.mvcproject.mgl.model.Game;
+import com.organization.mvcproject.mist.model.Game;
 
 @Service("javaGameService")
-public class Game_Service_Impl implements Game_Service {
+public class GameImpl implements GameService {
 
 	private static Long gameId = new Long(0);
 	private static Long companyId = new Long(0);
@@ -59,7 +59,7 @@ public class Game_Service_Impl implements Game_Service {
 	}
 
 	public static void setGameId(Long gameId) {
-		Game_Service_Impl.gameId = gameId;
+		GameImpl.gameId = gameId;
 	}
 
 	public static Long getCompanyId() {
@@ -67,7 +67,7 @@ public class Game_Service_Impl implements Game_Service {
 	}
 
 	public static void setCompanyId(Long companyId) {
-		Game_Service_Impl.companyId = companyId;
+		GameImpl.companyId = companyId;
 	}
 
 	public static List<Game> getGames() {
@@ -75,7 +75,7 @@ public class Game_Service_Impl implements Game_Service {
 	}
 
 	public static void setGames(ArrayList<Game> games) {
-		Game_Service_Impl.games = games;
+		GameImpl.games = games;
 	}
 
 }

@@ -1,4 +1,4 @@
-package com.organization.mvcproject.mgl.model;
+package com.organization.mvcproject.mist.model;
 
 import org.springframework.stereotype.Component;
 

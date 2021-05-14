@@ -1,9 +1,9 @@
-C:\Users\alexander.b.white\git\bootcamper-project\src\main\java\com\organization\mvcproject\mgl\model\Game.java
-C:\Users\alexander.b.white\git\bootcamper-project\src\main\java\com\organization\mvcproject\mgl\model\Company.java
-C:\Users\alexander.b.white\git\bootcamper-project\src\main\java\com\organization\mvcproject\mgl\service\Game_Service_Impl.java
-C:\Users\alexander.b.white\git\bootcamper-project\src\main\java\com\organization\mvcproject\mgl\controller\MGL_Controller.java
-C:\Users\alexander.b.white\git\bootcamper-project\src\main\java\com\organization\mvcproject\mgl\model\Review.java
+C:\Users\alexander.b.white\git\bootcamper-project\src\main\java\com\organization\mvcproject\mist\model\Review.java
+C:\Users\alexander.b.white\git\bootcamper-project\src\main\java\com\organization\mvcproject\mist\service\GameImpl.java
+C:\Users\alexander.b.white\git\bootcamper-project\src\main\java\com\organization\mvcproject\mist\model\Company.java
+C:\Users\alexander.b.white\git\bootcamper-project\src\main\java\com\organization\mvcproject\mist\service\GameService.java
 C:\Users\alexander.b.white\git\bootcamper-project\src\main\java\com\organization\mvcproject\controller\HomeController.java
-C:\Users\alexander.b.white\git\bootcamper-project\src\main\java\com\organization\mvcproject\mgl\service\Game_Service.java
 C:\Users\alexander.b.white\git\bootcamper-project\src\main\java\com\organization\mvcproject\config\RestResponseHandler.java
+C:\Users\alexander.b.white\git\bootcamper-project\src\main\java\com\organization\mvcproject\mist\model\Game.java
+C:\Users\alexander.b.white\git\bootcamper-project\src\main\java\com\organization\mvcproject\mist\controller\MistController.java
 C:\Users\alexander.b.white\git\bootcamper-project\src\main\java\com\organization\mvcproject\config\MvcConfiguration.java
