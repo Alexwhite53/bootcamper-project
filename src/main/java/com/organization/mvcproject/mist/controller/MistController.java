@@ -8,6 +8,8 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -24,17 +26,17 @@ public class MistController {
 	@Autowired
 	private GameService javaGameService;
 
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@GetMapping(value = "/")
 	public String home() {
 		return "index";
 	}
 
-	@RequestMapping(value = "/review", method = RequestMethod.GET)
+	@GetMapping(value = "/review")
 	public ModelAndView review() {
 		return new ModelAndView("review", "command", new Review());
 	}
 
-	@RequestMapping(value = "/addReview", method = RequestMethod.POST)
+	@GetMapping(value = "/addReview")
 	public ModelAndView addReview(Review review, ModelMap model) {
 		if(review.getAuthor().equals("")) {
 			review.setAuthor("anonymous");
@@ -42,17 +44,17 @@ public class MistController {
 		return new ModelAndView("result", "submittedReview", review);
 	}
 
-	@RequestMapping(value = "/games", method = RequestMethod.GET)
+	@GetMapping(value = "/games")
 	public ModelAndView game() {
 		return new ModelAndView("games", "command", new Game());
 	}
 
-	@RequestMapping(value = "/getAll", method = RequestMethod.GET)
+	@GetMapping(value = "/getAll")
 	public ResponseEntity<List<Game>> fetchAllGames() {
 		return new ResponseEntity<List<Game>>(javaGameService.retrieveAllGames(), HttpStatus.OK);
 	}
 
-	@RequestMapping(value = "/createGame", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
+	@PostMapping(value = "/createGame", consumes = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<Void> createGame(@RequestBody Game game) {
 		javaGameService.saveGame(game);
 		return new ResponseEntity<Void>(HttpStatus.CREATED);
