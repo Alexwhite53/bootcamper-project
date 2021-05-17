@@ -1,4 +1,4 @@
-package com.organization.mvcproject.mist.model;
+package com.organization.mvcproject.model;
 
 public class Review {
 	private String reviewBody;

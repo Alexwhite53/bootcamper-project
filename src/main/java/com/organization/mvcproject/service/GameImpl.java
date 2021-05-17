@@ -1,11 +1,11 @@
-package com.organization.mvcproject.mist.service;
+package com.organization.mvcproject.service;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.organization.mvcproject.mist.model.Game;
+import com.organization.mvcproject.model.Game;
 
 @Service("javaGameService")
 public class GameImpl implements GameService {

@@ -1,4 +1,4 @@
-package com.organization.mvcproject.mist.model;
+package com.organization.mvcproject.model;
 
 import java.util.ArrayList;
 import java.util.List;
