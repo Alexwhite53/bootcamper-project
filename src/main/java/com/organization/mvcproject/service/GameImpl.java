@@ -58,7 +58,7 @@ public class GameImpl implements GameService {
 		return gameId;
 	}
 
-	public static void setGameId(Long gameId) {
+	public static void setId(Long gameId) {
 		GameImpl.gameId = gameId;
 	}
 
